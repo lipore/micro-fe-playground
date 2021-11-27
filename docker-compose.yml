@@ -1,0 +1,17 @@
+version: '2'
+services:
+
+  account_app:
+    build: ./account
+    ports:
+     - "8081:80"
+
+  budget_app:
+    build: ./budget
+    ports:
+     - "8082:80"
+
+  portal:
+    build: ./portal
+    ports:
+     - "8080:80"
